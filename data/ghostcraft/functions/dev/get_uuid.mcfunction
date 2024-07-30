@@ -1,0 +1,1 @@
+$data get storage ghostcraft:uuid_storage UUIDs[{UUID:$(UUID)}]

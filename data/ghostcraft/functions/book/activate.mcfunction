@@ -1,3 +1,1 @@
-execute unless entity @e[type=armor_stand,distance=..5,limit=1,sort=nearest,tag=NPC] run return run tellraw @s "[Error] No nearby NPCs."
-
-tag @e[type=armor_stand,distance=..5,limit=1,sort=nearest,tag=NPC] add NPC_Active
+function ghostcraft:npc/activate with entity @e[type=minecraft:armor_stand,sort=nearest,limit=1,distance=..5,tag=NPC]

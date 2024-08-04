@@ -1,0 +1,1 @@
+$data modify storage ghostcraft:storage NPCs[{UUID:$(UUID)}] merge value {Active:0b}

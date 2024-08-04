@@ -1,0 +1,2 @@
+function ghostcraft:npc/select_nearest
+function ghostcraft:interaction/enable with storage ghostcraft:storage SelectedNPC

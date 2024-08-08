@@ -1,0 +1,1 @@
+function ghostcraft:npc/enable_interaction with entity @e[type=minecraft:armor_stand,sort=nearest,limit=1,distance=..5,tag=NPC]

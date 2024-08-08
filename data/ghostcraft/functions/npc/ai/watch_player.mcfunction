@@ -1,0 +1,1 @@
+execute at @s facing entity @p[tag=Player,gamemode=!spectator,gamemode=!creative] eyes run tp @s ~ ~ ~ ~ ~

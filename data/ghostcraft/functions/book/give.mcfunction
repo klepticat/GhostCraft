@@ -2,7 +2,7 @@ give @s written_book\
 {\
     display:{\
         Name:'{\
-            "text":"NPC Editor v2.4.1",\
+            "text":"NPC Editor v2.5.1",\
             "color":"#FFA1DC",\
             "bold":true\
         }'\
@@ -267,7 +267,40 @@ give @s written_book\
                 },\
                 "clickEvent":{\
                     "action":"run_command",\
-                    "value":"/function ghostcraft:book/deactivate"\
+                    "value":"/function ghostcraft:book/enable_interaction"\
+                }\
+            },\
+            {"text":"\\n\\n"},\
+            {\
+                "text":"[👁]",\
+                "color":"dark_green",\
+                "bold":false,\
+                "underlined":false,\
+                "hoverEvent":{\
+                    "action":"show_text",\
+                    "value":[\
+                        {"text":"Set AI: Watch Player","bold":true}\
+                    ]\
+                },\
+                "clickEvent":{\
+                    "action":"run_command",\
+                    "value":"/function ghostcraft:book/assign_ai {AI_Type:\\"watch_player\\"}"\
+                }\
+            },\
+            {\
+                "text":"[❌]",\
+                "color":"red",\
+                "bold":false,\
+                "underlined":false,\
+                "hoverEvent":{\
+                    "action":"show_text",\
+                    "value":[\
+                        {"text":"Set AI: None","bold":true}\
+                    ]\
+                },\
+                "clickEvent":{\
+                    "action":"run_command",\
+                    "value":"/function ghostcraft:book/assign_ai {AI_Type:\\"none\\"}"\
                 }\
             }\
         ]'\

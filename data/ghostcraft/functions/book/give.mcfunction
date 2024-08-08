@@ -2,7 +2,7 @@ give @s written_book\
 {\
     display:{\
         Name:'{\
-            "text":"NPC Editor v2.2.0",\
+            "text":"NPC Editor v2.4.1",\
             "color":"#FFA1DC",\
             "bold":true\
         }'\
@@ -175,6 +175,16 @@ give @s written_book\
                 }\
             },\
             {\
+                "text":"b",\
+                "color":"aqua",\
+                "bold":false,\
+                "underlined":false,\
+                "clickEvent":{\
+                    "action":"run_command",\
+                    "value":"/function ghostcraft:book/assign_color {Color:\\"0.33 1 1 1\\"}"\
+                }\
+            },\
+            {\
                 "text":"B",\
                 "color":"dark_blue",\
                 "bold":false,\
@@ -206,14 +216,14 @@ give @s written_book\
             },\
             {"text":"\\n\\n"},\
             {\
-                "text":"Activate NPC",\
+                "text":"Activate Glyph",\
                 "color":"dark_green",\
                 "bold":false,\
                 "underlined":false,\
                 "hoverEvent":{\
                     "action":"show_text",\
                     "value":[\
-                        {"text":"Activate NPC","bold":true},\
+                        {"text":"Activate Glyph","bold":true},\
                         {"text":"\\nEnables the glyph of NPC armor stand","bold":false,"italic":false},\
                         {"text":"\\n\\nNote: Does not toggle interaction due to current limitations","bold":false,"italic":false}\
                     ]\
@@ -225,16 +235,34 @@ give @s written_book\
             },\
             {"text":"\\n"},\
             {\
-                "text":"Deactivate NPC",\
+                "text":"Deactivate Glyph",\
                 "color":"red",\
                 "bold":false,\
                 "underlined":false,\
                 "hoverEvent":{\
                     "action":"show_text",\
                     "value":[\
-                        {"text":"Deactivate NPC","bold":true},\
+                        {"text":"Deactivate Glyph","bold":true},\
                         {"text":"\\nDisables the glyph of NPC armor stand","bold":false,"italic":false},\
                         {"text":"\\n\\nNote: Does not toggle interaction due to current limitations","bold":false,"italic":false}\
+                    ]\
+                },\
+                "clickEvent":{\
+                    "action":"run_command",\
+                    "value":"/function ghostcraft:book/deactivate"\
+                }\
+            },\
+            {"text":"\\n"},\
+            {\
+                "text":"Enable Interaction",\
+                "color":"dark_green",\
+                "bold":false,\
+                "underlined":false,\
+                "hoverEvent":{\
+                    "action":"show_text",\
+                    "value":[\
+                        {"text":"Enable Interaction","bold":true},\
+                        {"text":"\\nEnables the interaction box of NPC armor stand","bold":false,"italic":false}\
                     ]\
                 },\
                 "clickEvent":{\

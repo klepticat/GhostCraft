@@ -1,0 +1,1 @@
+return run function ghostcraft:npc/exists with storage ghostcraft:storage SelectedNPC

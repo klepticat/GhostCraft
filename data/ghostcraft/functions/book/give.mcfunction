@@ -2,23 +2,22 @@ give @s written_book\
 {\
     display:{\
         Name:'{\
-            "text":"NPC Editor v2.5.1",\
+            "text":"NPC Editor v2.7.2",\
             "color":"#FFA1DC",\
             "bold":true\
         }'\
     },\
     title:"",\
-    author:"",\
+    author:"klepti",\
     pages:[\
         '[\
             {\
-                "text":"NPC Editor",\
+                "text":"NPC Editor\\n",\
                 "color":"black",\
                 "bold":true\
             },\
-            {"text":"\\n\\n"},\
             {\
-                "text":"Init NPC",\
+                "text":"[INIT NPC]",\
                 "color":"dark_green",\
                 "bold":false,\
                 "underlined":false,\
@@ -34,9 +33,8 @@ give @s written_book\
                     "value":"/function ghostcraft:npc/initialize with entity @e[type=armor_stand,tag=!NPC,sort=nearest,distance=..10,limit=1]"\
                 }\
             },\
-            {"text":"\\n"},\
             {\
-                "text":"Delete NPC",\
+                "text":"[DEL NPC]",\
                 "color":"red",\
                 "bold":false,\
                 "underlined":false,\
@@ -60,7 +58,7 @@ give @s written_book\
                 "underlined":false\
             },\
             {\
-                "text":" ! |",\
+                "text":"[❗]",\
                 "color":"red",\
                 "bold":false,\
                 "underlined":false,\
@@ -76,7 +74,7 @@ give @s written_book\
                 }\
             },\
             {\
-                "text":" ? |",\
+                "text":"[❓]",\
                 "color":"red",\
                 "bold":false,\
                 "underlined":false,\
@@ -92,7 +90,7 @@ give @s written_book\
                 }\
             },\
             {\
-                "text":" . |",\
+                "text":"[⬩]",\
                 "color":"red",\
                 "bold":false,\
                 "underlined":false,\
@@ -108,7 +106,7 @@ give @s written_book\
                 }\
             },\
             {\
-                "text":" ↔  ",\
+                "text":"[↔]",\
                 "color":"red",\
                 "bold":false,\
                 "underlined":false,\
@@ -125,7 +123,7 @@ give @s written_book\
             },\
             {"text":"\\n"},\
             {\
-                "text":"R",\
+                "text":"[R",\
                 "color":"red",\
                 "bold":false,\
                 "underlined":false,\
@@ -205,7 +203,7 @@ give @s written_book\
                 }\
             },\
             {\
-                "text":"V",\
+                "text":"V]",\
                 "color":"light_purple",\
                 "bold":false,\
                 "underlined":false,\
@@ -216,7 +214,12 @@ give @s written_book\
             },\
             {"text":"\\n\\n"},\
             {\
-                "text":"Activate Glyph",\
+                "text":"Glyph Visibility\\n",\
+                "color":"black",\
+                "bold":true\
+            },\
+            {\
+                "text":"[SHOW]",\
                 "color":"dark_green",\
                 "bold":false,\
                 "underlined":false,\
@@ -224,8 +227,7 @@ give @s written_book\
                     "action":"show_text",\
                     "value":[\
                         {"text":"Activate Glyph","bold":true},\
-                        {"text":"\\nEnables the glyph of NPC armor stand","bold":false,"italic":false},\
-                        {"text":"\\n\\nNote: Does not toggle interaction due to current limitations","bold":false,"italic":false}\
+                        {"text":"\\nEnables the glyph of NPC armor stand","bold":false,"italic":false}\
                     ]\
                 },\
                 "clickEvent":{\
@@ -233,9 +235,8 @@ give @s written_book\
                     "value":"/function ghostcraft:book/activate"\
                 }\
             },\
-            {"text":"\\n"},\
             {\
-                "text":"Deactivate Glyph",\
+                "text":"[HIDE]",\
                 "color":"red",\
                 "bold":false,\
                 "underlined":false,\
@@ -243,8 +244,7 @@ give @s written_book\
                     "action":"show_text",\
                     "value":[\
                         {"text":"Deactivate Glyph","bold":true},\
-                        {"text":"\\nDisables the glyph of NPC armor stand","bold":false,"italic":false},\
-                        {"text":"\\n\\nNote: Does not toggle interaction due to current limitations","bold":false,"italic":false}\
+                        {"text":"\\nDisables the glyph of NPC armor stand","bold":false,"italic":false}\
                     ]\
                 },\
                 "clickEvent":{\
@@ -252,9 +252,14 @@ give @s written_book\
                     "value":"/function ghostcraft:book/deactivate"\
                 }\
             },\
-            {"text":"\\n"},\
+            {"text":"\\n\\n"},\
             {\
-                "text":"Enable Interaction",\
+                "text":"Interaction\\n",\
+                "color":"black",\
+                "bold":true\
+            },\
+            {\
+                "text":"[✔]",\
                 "color":"dark_green",\
                 "bold":false,\
                 "underlined":false,\
@@ -270,7 +275,30 @@ give @s written_book\
                     "value":"/function ghostcraft:book/enable_interaction"\
                 }\
             },\
-            {"text":"\\n\\n"},\
+            {\
+                "text":"[❌]",\
+                "color":"red",\
+                "bold":false,\
+                "underlined":false,\
+                "hoverEvent":{\
+                    "action":"show_text",\
+                    "value":[\
+                        {"text":"Disable Interaction","bold":true},\
+                        {"text":"\\nDisables the interaction box of NPC armor stand","bold":false,"italic":false}\
+                    ]\
+                },\
+                "clickEvent":{\
+                    "action":"run_command",\
+                    "value":"/function ghostcraft:book/disable_interaction"\
+                }\
+            }\
+        ]',\
+        '[\
+            {\
+                "text":"AI Type\\n",\
+                "color":"black",\
+                "bold":true\
+            },\
             {\
                 "text":"[👁]",\
                 "color":"dark_green",\

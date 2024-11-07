@@ -1,1 +1,0 @@
-$data modify storage ghostcraft:storage SelectedNPC set from storage ghostcraft:storage NPCs[{UUID:$(UUID)}]

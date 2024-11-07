@@ -1,1 +1,0 @@
-execute at @s facing entity @p[tag=Player,gamemode=!spectator,gamemode=!creative,distance=..50] feet run tp @s ~ ~ ~ ~ ~

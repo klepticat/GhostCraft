@@ -1,1 +1,0 @@
-$data modify storage ghostcraft:storage NPCs insert 0 value {UUID:$(UUID)}

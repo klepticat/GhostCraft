@@ -1,0 +1,24 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:player_hurt_entity",
+            "conditions": {
+                "entity": {
+                    "type": "minecraft:interaction",
+                    "nbt": "{Tags:[\"NPC_Interaction\"]}"
+                },
+                "player": {
+                    "type_specific": {
+                        "type": "player",
+                        "gamemode": [
+                            "creative"
+                        ]
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "ghostcraft:npc/interaction/trigger_attack"
+    }
+}

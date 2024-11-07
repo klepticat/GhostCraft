@@ -1,1 +1,0 @@
-$function ghostcraft:display/$(Glyph) {Color: "$(Color)"}

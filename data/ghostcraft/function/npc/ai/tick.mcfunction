@@ -1,1 +1,0 @@
-$function ghostcraft:npc/ai/$(AI_Type)

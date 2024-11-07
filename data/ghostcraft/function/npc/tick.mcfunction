@@ -1,3 +1,1 @@
-function ghostcraft:npc/select with entity @s
-execute if data storage ghostcraft:storage {SelectedNPC:{Active:1b}} at @s run function ghostcraft:npc/display with storage ghostcraft:storage SelectedNPC
-execute if data storage ghostcraft:storage SelectedNPC.AI_Type unless data storage ghostcraft:storage {SelectedNPC:{AI_Type:"none"}} run function ghostcraft:npc/ai/tick with storage ghostcraft:storage SelectedNPC
+execute if predicate ghostcraft:npc_ai_watch at @s run tp @s ~ ~ ~ facing entity @p[tag=Player]

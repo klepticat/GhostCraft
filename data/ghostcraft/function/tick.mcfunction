@@ -1,0 +1,2 @@
+execute as @e[type=armor_stand,tag=NPC] run function ghostcraft:npc/tick
+execute as @e[type=interaction,tag=NPC_Interaction,predicate=!ghostcraft:npc_cleanup_test] run function ghostcraft:npc/interaction/tick
